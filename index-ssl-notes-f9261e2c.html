@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简明指南 · 华体会</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9fafb;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      color: #1f2937;
+      padding: 2.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 44rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* header */
+    .site-header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 1.25rem;
+    }
+
+    .site-title {
+      font-size: 1.75rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #111827;
+    }
+
+    .site-desc {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #6b7280;
+    }
+
+    /* 正文排版 */
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+
+    .content h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-top: 0.8rem;
+      color: #1f2937;
+      border-left: 3px solid #3b82f6;
+      padding-left: 0.75rem;
+    }
+
+    .content p {
+      font-size: 1rem;
+      color: #374151;
+    }
+
+    .content .inset-quote {
+      background-color: #ffffff;
+      border-left: 4px solid #9ca3af;
+      padding: 1rem 1.25rem;
+      margin: 0.8rem 0;
+      font-size: 0.95rem;
+      color: #4b5563;
+      border-radius: 2px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+
+    .content .inset-quote strong {
+      color: #1f2937;
+    }
+
+    .content ul {
+      padding-left: 1.5rem;
+      list-style: none;
+    }
+
+    .content ul li {
+      position: relative;
+      padding-left: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #374151;
+    }
+
+    .content ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: #3b82f6;
+      font-weight: 700;
+    }
+
+    /* 提示块 */
+    .notice-box {
+      background: #eef2ff;
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.2rem 0;
+      border: 1px solid #c7d2fe;
+    }
+
+    .notice-box .label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #4338ca;
+      letter-spacing: 0.3px;
+      margin-bottom: 0.4rem;
+    }
+
+    .notice-box p {
+      font-size: 0.95rem;
+      color: #1e1b4b;
+      margin: 0;
+    }
+
+    /* 访问句（双行） */
+    .access-line {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e7eb;
+      font-size: 1rem;
+      color: #374151;
+    }
+
+    .access-line .link-embed {
+      background: #f3f4f6;
+      padding: 0.15rem 0.3rem;
+      border-radius: 3px;
+    }
+
+    .access-line a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #93c5fd;
+    }
+
+    .access-line a:hover {
+      color: #1d4ed8;
+      border-bottom-style: solid;
+    }
+
+    .footer-note {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      text-align: center;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      .site-title {
+        font-size: 1.5rem;
+      }
+      .content h2 {
+        font-size: 1.2rem;
+      }
+      .notice-box {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1 class="site-title">简洁笔记 · 华体会</h1>
+      <p class="site-desc">一份平实的使用指引与提醒</p>
+    </header>
+
+    <div class="content">
+      <h2>背景与定位</h2>
+      <p>
+        很多人第一次接触「<strong>华体会</strong>」这个词，往往来自于某个活动页面、推送链接或者朋友推荐。
+        它是一个长期运营的线上服务标识，主要面向日常信息查看与轻量互动场景。下面从几个实际角度整理了一些要点。
+      </p>
+
+      <div class="inset-quote">
+        <strong>一个小观察：</strong> 大部分查询或操作都可以在几分钟内完成，前提是熟悉基本的路径和入口。
+      </div>
+
+      <h2>开始前值得了解的几件事</h2>
+      <ul>
+        <li>不需要额外安装软件，使用浏览器即可。</li>
+        <li>界面以列表和卡片为主，信息层级比较清晰。</li>
+        <li>部分功能需要简单注册或绑定，但流程不长。</li>
+        <li>如果遇到加载缓慢，可以稍后重试或检查本地网络。</li>
+      </ul>
+
+      <h2>常见场景片段</h2>
+      <p>
+        许多人在第一次尝试时都会问同一个问题：“我该从哪里开始？” 其实入口非常明确——找到带有<strong>华体会</strong>标识的地址栏或首页按钮。下面这段引用来自一位使用超过一年的用户整理的习惯：
+      </p>
+      <div class="inset-quote">
+        “我一般先扫一眼公告区，再看个人动态。页面结构几个月调整一次，但核心模块位置基本不变。”
+      </div>
+      <p>
+        另外，如果你习惯于批量操作或需要查阅历史记录，平台提供了按时间、类型筛选的功能，值得花两分钟熟悉一下。
+      </p>
+
+      <h2>一个实用的提醒</h2>
+      <div class="notice-box">
+        <div class="label">⏺ 例行提示</div>
+        <p>
+          请始终通过你已知的、可靠的链接访问相关服务。不要随意点击来历不明的短链或弹窗。
+          如果你打算直接前往常去的页面，推荐手动输入或使用收藏夹中已验证的地址。
+        </p>
+      </div>
+
+      <p>
+        如果你是第一次听说<strong>华体会</strong>，可以先从浏览公开信息开始，不必急于操作。
+        多数功能都有明确的文字指引，跟着步骤走一般不会出错。
+        下面这句话是很多老用户总结出来的经验：
+      </p>
+      <div class="inset-quote">
+        遇到不确定的选项时，先点「帮助」或「常见问题」，大部分疑惑都能在里面找到答案。
+      </div>
+
+      <h2>FAQ 摘要</h2>
+      <ul>
+        <li><strong>是否需要付费？</strong> 基础功能免费，部分增值服务有明确标价。</li>
+        <li><strong>账号安全怎么做？</strong> 建议开启双重验证，密码不要与其他网站重复。</li>
+        <li><strong>页面打不开怎么办？</strong> 刷新、切换网络、清除缓存，三步基本能解决。</li>
+      </ul>
+
+      <!-- 访问句 —— 自然嵌入链接，文本严格等于“华体会” -->
+      <div class="access-line">
+        <p>
+          若你需要直接访问，推荐将
+          <span class="link-embed">
+            <a href="https://index-ssl-huatihui.com">华体会</a>
+          </span>
+          添加至浏览器书签，以便日后快速定位。
+        </p>
+        <p style="margin-top: 0.3rem; color: #6b7280; font-size: 0.9rem;">
+          日常使用时，留意地址栏是否显示安全锁标识即可。
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      整理于个人笔记 · 仅供参考 ｜ 版本 2025
+    </div>
+  </div>
+</body>
+</html>
