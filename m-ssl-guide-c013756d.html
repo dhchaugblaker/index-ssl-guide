@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再次遇见 · 麻将胡了漫谈</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9f6f0;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            color: #3e3a36;
+            line-height: 1.8;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fefcf7;
+            padding: 2.5rem 2rem;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        /* hero 开场 */
+        .hero-tag {
+            display: inline-block;
+            background: #ede8de;
+            color: #6b5e4f;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            margin-bottom: 2rem;
+            font-family: 'SF Mono', monospace;
+        }
+
+        .opening-line {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #2d2925;
+            margin: 1.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e5ddd0;
+            letter-spacing: 0.5px;
+        }
+
+        .opening-line span {
+            background: #f3ede3;
+            padding: 0 0.3rem;
+        }
+
+        /* 承接段落 */
+        .body-text {
+            font-size: 1.05rem;
+            margin: 1.6rem 0;
+            text-indent: 2em;
+            color: #3f3b36;
+        }
+
+        .body-text a {
+            color: #8b6f50;
+            text-decoration: none;
+            border-bottom: 1px dashed #cbb9a6;
+            transition: border 0.2s;
+        }
+
+        .body-text a:hover {
+            border-bottom: 1px solid #8b6f50;
+        }
+
+        /* 引用 / 提示框 */
+        .gentle-quote {
+            background: #f3f0ea;
+            padding: 1.2rem 1.8rem;
+            border-radius: 18px;
+            margin: 2rem 0;
+            border-left: 4px solid #c9b8a3;
+            font-style: normal;
+            color: #4a423b;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .gentle-quote p {
+            text-indent: 0;
+            margin: 0.4rem 0;
+        }
+
+        .gentle-quote .quote-label {
+            display: inline-block;
+            background: #ddd6cb;
+            color: #3f372f;
+            font-size: 0.75rem;
+            padding: 0.15rem 1rem;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* 特点卡片 */
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 2.5rem 0 1.8rem;
+        }
+
+        .feature-item {
+            flex: 1 1 180px;
+            background: #f9f4ec;
+            padding: 1.2rem 1rem;
+            border-radius: 16px;
+            border: 1px solid #ede5d9;
+            transition: 0.2s ease;
+        }
+
+        .feature-item:hover {
+            background: #f4ede3;
+            border-color: #d6c9b8;
+        }
+
+        .feature-item h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #4f4438;
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.3px;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #5b5248;
+            text-indent: 0;
+        }
+
+        /* 温和结尾 */
+        .closing-note {
+            margin: 2.2rem 0 0.5rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e7dfd2;
+            font-size: 1rem;
+            color: #4e463e;
+            text-align: center;
+            font-style: italic;
+            letter-spacing: 0.3px;
+        }
+
+        .closing-note small {
+            display: block;
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: #8b7e6f;
+            font-style: normal;
+        }
+
+        .closing-note a {
+            color: #7c6d5b;
+            border-bottom: 1px dotted #cbbaa8;
+            text-decoration: none;
+        }
+
+        .closing-note a:hover {
+            border-bottom: 1px solid #7c6d5b;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .page {
+                padding: 1.5rem 1.2rem;
+                border-radius: 18px;
+            }
+            .opening-line {
+                font-size: 1.3rem;
+            }
+            .feature-grid {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .feature-item {
+                flex: 1 1 auto;
+            }
+            .gentle-quote {
+                padding: 1rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .opening-line {
+                font-size: 1.15rem;
+            }
+            .body-text {
+                font-size: 0.98rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 开场短句 -->
+        <div class="hero-tag">· 再访小记 ·</div>
+        <div class="opening-line">
+            <span>有些页面，值得再次打开。</span>
+        </div>
+
+        <!-- 承接段落：自然嵌入链接，收藏/持续关注角度 -->
+        <p class="body-text">
+            熟悉一个地方，往往不是从第一次遇见开始，而是从“下次还会回来”的念头里慢慢生根。几个月前偶然浏览到<a href="https://m-ssl-mahjong.com">麻将胡了</a>，当时只觉得内容干净、节奏舒缓，没有喧闹的推送，也没有浮夸的引导。后来浏览器换了，书签栏清空过两次，但那个名字总在记忆里浮起来——因为它的气息不像一个站点，更像一个安静的角落，摆着几把椅子，等你随时坐下翻两页。
+        </p>
+
+        <p class="body-text">
+            于是又打开，发现它依然保持着自己的步调。没有刺眼的弹窗，没有频繁的催促，只有朴素的信息排列和一种沉稳的叙事感。收藏夹里重新添上它的时候，我意识到：自己需要的不是更多“入口”，而是一个愿意持续了解、慢慢品读的去处。这也是为什么今天想把它写进这篇随笔里。
+        </p>
+
+        <!-- 提示 / 引用块（温和语气） -->
+        <div class="gentle-quote">
+            <span class="quote-label">📌 一点观察</span>
+            <p>连续几周留意下来，「麻将胡了」的内容更新不算密集，但每篇都保留着一种克制的完整——没有为了流量而拆分标题，也没有用夸张的对比吸引视线。它更像一个长期更新笔记本，适合隔段时间回来看一眼，发现那些细小的变化。</p>
+            <p style="margin-top: 0.6rem; font-size: 0.95rem;">—— 也许这就是收藏夹里最舒服的状态：不用时时惦记，但每次打开都感到熟悉与新鲜并存。</p>
+        </div>
+
+        <!-- 特点列表（差异化：非功能罗列，而是体验侧写） -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h4>📖 安静的叙事</h4>
+                <p>页面排版以阅读为重心，没有多余装饰，文字间距与行宽都经过调整，适合长时间浏览而不疲劳。</p>
+            </div>
+            <div class="feature-item">
+                <h4>☕ 节奏由你</h4>
+                <p>不设自动播放、不主动推送，每一次访问都是主动选择，你可以按自己的步调慢慢探索。</p>
+            </div>
+            <div class="feature-item">
+                <h4>🔖 适合收藏</h4>
+                <p>结构清晰、内容独立，每一页都可以作为单独的书签留存，不会因为改版而丢失阅读的连贯性。</p>
+            </div>
+            <div class="feature-item">
+                <h4>🌱 持续生长</h4>
+                <p>内容在缓慢而稳定地迭代，没有突然的改头换面，熟悉感始终在线——像一个老友，不必天天见面，但每次都有话可聊。</p>
+            </div>
+        </div>
+
+        <!-- 温和结尾 + 再次嵌入链接 -->
+        <div class="closing-note">
+            <p>如果你也在找一个可以反复回来、不必担心被打扰的地方，不妨把<a href="https://m-ssl-mahjong.com">麻将胡了</a>放进收藏夹。</p>
+            <p style="margin-top: 0.6rem;">不需要刻意记住打开的时间，只要知道它一直在那里就好。</p>
+            <small>—— 偶尔回来，翻翻旧页，看看新篇，保持一种温柔的浏览习惯。</small>
+        </div>
+    </div>
+</body>
+</html>
